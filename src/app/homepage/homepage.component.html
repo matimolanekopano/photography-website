@@ -1,1 +1,25 @@
-<p>homepage works!</p>
+<div class="flex flex-wrap">
+  <!-- Image Section: 40% -->
+  <img src="https://images.unsplash.com/photo-1646753522408-077ef9839300?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+       alt="Leafs" 
+       class="w-full sm:w-4/12 h-48 object-cover sm:h-screen">
+  
+  <!-- Writing Section: 60% -->
+  <div class="w-full sm:w-8/12">
+    <div class="container mx-auto h-full sm:p-5">
+      <header class="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
+        <div class="w-full">
+          <h1 class="text-4xl lg:text-7xl font-bold">
+            HI, I'M <span class="text-green-700">KOPANO</span> MATIMOLANE
+          </h1>
+          <div class="w-20 h-2 bg-green-700 my-4"></div>
+          <p class="mr-3 uppercase text-xl mb-10">
+            Welcome to my gallery! I'm just a girl who is obsessed with capturing life's best moments. 
+            From big milestones to small glances, I strive to turn fleeting memories into forever keepsakes.
+          </p>
+          <button (click)="goToGallery()" class="bg-white text-black border border-black text-2xl font-small px-4 py-2 rounded-[20px] shadow hover:bg-black hover:text-white hover:border-white transition-all duration-300">GALLERY</button>
+        </div>
+      </header>
+    </div>
+  </div>
+</div>

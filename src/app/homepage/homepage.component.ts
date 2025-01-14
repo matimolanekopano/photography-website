@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'
 })
-export class HomepageComponent {
+export class HomepageComponent implements OnInit {
 
+  constructor(private router: Router) {}
+
+  goToGallery() {
+    this.router.navigate(['/picture']);
+  }
+
+  ngOnInit(): void {
+  }
 }
