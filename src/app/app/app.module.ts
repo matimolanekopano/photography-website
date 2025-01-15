@@ -15,6 +15,8 @@ import { OmoBirthdayComponent } from '../omo-birthday/omo-birthday.component';
 import { KhanyaMdComponent } from '../khanya-md/khanya-md.component';
 import { PertuniaBirthdayComponent } from '../pertunia-birthday/pertunia-birthday.component';
 import { TaiBirthdayComponent } from '../tai-birthday/tai-birthday.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -34,8 +36,12 @@ import { TaiBirthdayComponent } from '../tai-birthday/tai-birthday.component';
           { path: 'pertunia', component: PertuniaBirthdayComponent },
     ]),
     BrowserModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
