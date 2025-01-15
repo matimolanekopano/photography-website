@@ -1,4 +1,4 @@
-<div>
+<div *ngIf="!isHomePage">
   <nav class="bg-white border-gray-200 dark:bg-gray-900">
     <div class="max-w-screen-xl flex items-center justify-center mx-auto p-4">
       
@@ -7,16 +7,16 @@
           class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           <li>
             <a routerLink="/picture"
-              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-pink-500 md:p-0 md:dark:text-pink-500"
               aria-current="page">Gallery</a>
           </li>
           <li>
             <a routerLink="/pricing"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-500 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
           </li>
           <li>
             <a routerLink="/contact"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
           </li>
         </ul>
       </div>
@@ -29,25 +29,28 @@
 </main>
 
 <!-- Social Media Footer -->
-<footer class="bg-white fixed bottom-0 left-0 w-full py-4 ">
-  <div class="max-w-screen-xl mx-auto flex justify-center space-x-6">
-    <!-- YouTube Icon -->
-    <a href="https://youtube.com/@kopanospov?si=PEP6EsNggKzE6Cua" class="text-gray-500 hover:text-red-500">
-      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-6 w-6" viewBox="0 0 24 24">
-        <path d="M19.615 3.184a3.152 3.152 0 00-2.223-2.232C15.792.6 12 0.6 12 0.6s-3.792 0-5.392.352a3.152 3.152 0 00-2.223 2.232C4 5.208 4 8.8 4 8.8s0 3.592.385 5.616a3.152 3.152 0 002.223 2.232C8.208 16.4 12 16.4 12 16.4s3.792 0 5.392-.352a3.152 3.152 0 002.223-2.232C20 12.392 20 8.8 20 8.8s0-3.592-.385-5.616zM9.75 12.002v-4.8L14.5 9.6l-4.75 2.402z"></path>
-      </svg>
-    </a>
-    <a href="https://www.instagram.com/kopanosgallery?igsh=eHRldnh1Zm85dTY1&utm_source=qr" class="text-gray-500 hover:text-blue-500">
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-6 w-6" viewBox="0 0 24 24">
-        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-      </svg>
-    </a>
-    <!-- TikTok Icon -->
-    <a href="http://tiktok.com/@kopanospov" class="text-gray-500 hover:text-black">
-      <svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6">
-        <path d="M232 80a95.13 95.13 0 01-52.81-16A57.23 57.23 0 00120 0h-16a8 8 0 00-8 8v136a24 24 0 11-16-22.63V92.31a56 56 0 1024 45.38v-81.3a72 72 0 0041.38 65.17 8 8 0 003.62.88A95.13 95.13 0 00232 96a8 8 0 008-8V80a8 8 0 00-8-8z"></path>
-      </svg>
-    </a>
-  </div>
-</footer>
+<div *ngIf="!isHomePage">
+  <footer class="bg-white fixed bottom-0 left-0 w-full py-4 ">
+    <div class="max-w-screen-xl mx-auto flex justify-center space-x-6">
+      <!-- YouTube Icon -->
+      <a href="https://youtube.com/@kopanospov?si=PEP6EsNggKzE6Cua" class="text-gray-500 hover:text-pink-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-6 w-6" viewBox="0 0 24 24">
+          <path d="M19.615 3.184a3.152 3.152 0 00-2.223-2.232C15.792.6 12 0.6 12 0.6s-3.792 0-5.392.352a3.152 3.152 0 00-2.223 2.232C4 5.208 4 8.8 4 8.8s0 3.592.385 5.616a3.152 3.152 0 002.223 2.232C8.208 16.4 12 16.4 12 16.4s3.792 0 5.392-.352a3.152 3.152 0 002.223-2.232C20 12.392 20 8.8 20 8.8s0-3.592-.385-5.616zM9.75 12.002v-4.8L14.5 9.6l-4.75 2.402z"></path>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/kopanosgallery?igsh=eHRldnh1Zm85dTY1&utm_source=qr" class="text-gray-500 hover:text-pink-500">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-6 w-6" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <!-- TikTok Icon -->
+      <a href="http://tiktok.com/@kopanospov" class="text-gray-500 hover:text-pink-500">
+        <svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6">
+          <path d="M232 80a95.13 95.13 0 01-52.81-16A57.23 57.23 0 00120 0h-16a8 8 0 00-8 8v136a24 24 0 11-16-22.63V92.31a56 56 0 1024 45.38v-81.3a72 72 0 0041.38 65.17 8 8 0 003.62.88A95.13 95.13 0 00232 96a8 8 0 008-8V80a8 8 0 00-8-8z"></path>
+        </svg>
+      </a>
+    </div>
+  </footer>
+  
+</div>

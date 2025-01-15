@@ -15,14 +15,13 @@ import { PricingComponent } from '../pricing/pricing.component';
   imports: [
     CommonModule,
     RouterModule.forRoot([
-      { path: 'home', component: HomepageComponent },
+      { path: '', component: HomepageComponent },
       { path: 'birthdays', component: BirthdaysComponent },
       { path: 'love', component: LoveComponent },
       { path: 'md', component: MdComponent },
       { path: 'picture', component: PictureDisplayComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'pricing', component: PricingComponent },
-      { path: '', redirectTo: '/home', pathMatch: 'full'},
     ]),
     BrowserModule,
   ],

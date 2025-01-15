@@ -1,21 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { Router } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css'
 })
-export class HomepageComponent implements OnInit {
+export class HomepageComponent {
 
   constructor(private router: Router) {}
 
   goToGallery() {
     this.router.navigate(['/picture']);
-  }
-
-  ngOnInit(): void {
   }
 }

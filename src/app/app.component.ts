@@ -1,24 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterModule],
+  imports: [
+    RouterOutlet, 
+    RouterModule,
+    CommonModule,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'photography-website';
 
-  showNavbar: boolean = true;
+  isHomePage: boolean = false;
 
   constructor(private router: Router) {
-    // Update navbar visibility based on route
     this.router.events.subscribe(() => {
-      this.showNavbar = !this.router.url.includes('home');
+      this.isHomePage = this.router.url === '/' || this.router.url === '/home';
     });
   }
 }
