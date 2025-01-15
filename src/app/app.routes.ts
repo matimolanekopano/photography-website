@@ -8,7 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PricingComponent } from './pricing/pricing.component';
 
 export const routes: Routes = [
-    { path: 'home', component: HomepageComponent },
+    { path: '', component: HomepageComponent },
     { path: 'birthdays', component: BirthdaysComponent },
     { path: 'love', component: LoveComponent },
     { path: 'md', component: MdComponent },
