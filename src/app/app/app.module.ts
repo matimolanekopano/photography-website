@@ -10,18 +10,28 @@ import { MdComponent } from '../md/md.component';
 import { PictureDisplayComponent } from '../picture-display/picture-display.component';
 import { ContactComponent } from '../contact/contact.component';
 import { PricingComponent } from '../pricing/pricing.component';
+import { RatladiWeddingComponent } from '../ratladi-wedding/ratladi-wedding.component';
+import { OmoBirthdayComponent } from '../omo-birthday/omo-birthday.component';
+import { KhanyaMdComponent } from '../khanya-md/khanya-md.component';
+import { PertuniaBirthdayComponent } from '../pertunia-birthday/pertunia-birthday.component';
+import { TaiBirthdayComponent } from '../tai-birthday/tai-birthday.component';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forRoot([
       { path: '', component: HomepageComponent },
-      { path: 'birthdays', component: BirthdaysComponent },
-      { path: 'love', component: LoveComponent },
-      { path: 'md', component: MdComponent },
-      { path: 'picture', component: PictureDisplayComponent },
-      { path: 'contact', component: ContactComponent },
-      { path: 'pricing', component: PricingComponent },
+          { path: 'birthdays', component: BirthdaysComponent },
+          { path: 'love', component: LoveComponent },
+          { path: 'md', component: MdComponent },
+          { path: 'picture', component: PictureDisplayComponent },
+          { path: 'contact', component: ContactComponent },
+          { path: 'pricing', component: PricingComponent }, 
+          { path: 'ratladi', component: RatladiWeddingComponent},
+          { path: 'tai', component: TaiBirthdayComponent },
+          { path: 'omo', component: OmoBirthdayComponent },
+          { path: 'khanya', component: KhanyaMdComponent },
+          { path: 'pertunia', component: PertuniaBirthdayComponent },
     ]),
     BrowserModule,
   ],
