@@ -1,31 +1,28 @@
-<div class="flex flex-wrap">
-  <!-- Image Section: 40% -->
-  <img src="assets/Homepage(2).jpg"
-       alt="Homepage" 
-       class="w-full sm:w-6/12 h-48 object-cover sm:h-screen">
-  
-  <!-- Writing Section: 60% -->
-  <div class="w-full sm:w-6/12">
-    <div class="container mx-auto h-full sm:p-5">
-      <header class="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
-        <div class="w-full">
-          <h1 class="text-4xl lg:text-7xl font-bold">
-            HI, I'M <span class="text-pink-500">KOPANO</span> MATIMOLANE
-          </h1>
-          <div class="w-20 h-2 bg-pink-500 my-4"></div>
-          <p class="mr-3 uppercase text-xl mb-10">
-            Welcome to my gallery! I'm just a girl who is obsessed with capturing life's best moments. 
-            From big milestones to small glances, I strive to turn fleeting memories into forever keepsakes.
-          </p>
-          <!--<button (click)="goToGallery()" class="bg-white text-black border border-black text-2xl font-small px-4 py-2 rounded-[20px] shadow hover:bg-pink-500 hover:text-black hover:border-pink-500 transition-all duration-300">SEE MORE</button>-->
-          <div class="flex flex-wrap gap-6">
-            <a class="relative" routerLink="/picture" >
-                <span class="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-black"></span>
-                <span class="fold-bold relative inline-block h-full w-full rounded border-2 border-black bg-white px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-pink-500 hover:text-gray-900">see more</span>
-            </a>
-        </div>
-        </div>
-      </header>
-    </div>
+<div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+  <!-- Background for larger screens -->
+  <div class="absolute inset-0 hidden lg:block">
+    <img src="assets/Homepage(4).JPG" alt="Background Image" class="object-cover object-center w-full h-full" />
+    <div class="absolute inset-0 bg-black opacity-30"></div>
+  </div>
+
+  <!-- Display picture for smaller screens -->
+  <div class="absolute inset-0 flex items-center justify-center lg:hidden">
+    <img src="assets/Homepage(6).JPG" alt="Display Picture" class="object-cover object-center w-full h-full" />
+    <div class="absolute inset-0 bg-black opacity-30"></div>
+  </div>
+
+  <div class="relative z-10 flex flex-col justify-center items-center w-full h-full text-center px-10 lg:px-40">
+    <h1 class="leading-none">
+      <span class="text-2xl lg:text-7xl font-playfair">Turning </span> 
+      <span class="text-4xl lg:text-[100px] font-imperialScript">fleeting</span> 
+      <span class="text-2xl lg:text-7xl font-playfair"> moments into</span>
+      <span class="text-4xl lg:text-[100px] font-imperialScript"> timeless treasures</span>
+      <span class="text-2xl lg:text-7xl font-playfair">, one click at a time.</span>
+    </h1>
+    <a routerLink="/picture" class="font-playfair bg-white text-gray-900 hover:bg-black hover:text-white py-2 px-6 rounded-full lg:text-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg mt-8">
+      See More
+    </a>
   </div>
 </div>
+
+
