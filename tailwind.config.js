@@ -12,7 +12,6 @@ module.exports = {
         oldStandard: ['"Old Standard TT"', 'serif'],
         ballet: ['Ballet', 'serif'],
         imperialScript: ['Imperial Script', 'cursive'],
-        fleurDeLeah: ['Fleur de Leah', 'serif'],
       },
     },
   },
