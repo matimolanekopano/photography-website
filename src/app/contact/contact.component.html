@@ -2,12 +2,11 @@
   <!-- Writing Section: 60% -->
   <div class="w-full sm:w-7/12">
       <div class="container mx-auto h-full sm:p-5">
-          <div class="bg-white px-6 py-12 sm:py-24 lg:px-8">
+          <div class="bg-white px-6 py-12 lg:px-8">
               <div class="mx-auto max-w-xl flex flex-col items-center justify-center text-center">
                 <div class="text-center">
                     <h1 class="font-imperialScript text-[60px] lg:text-[80px] mr-1">get in touch</h1>
                 </div>
-                  <p class="text-gray-500 mr-3 uppercase text-xs">Use the form below to make inquiries or get more information.</p>
               </div>
               <form class="mx-auto mt-5 max-w-xl sm:mt-20" (ngSubmit)="onSubmit()" [formGroup]="contactForm">
                   <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -27,6 +26,12 @@
                           <label for="email" class="uppercase block text-base font-bold text-black text-gray-900">Email</label>
                           <div class="mt-2.5">
                               <input formControlName="email" type="email" id="email" placeholder="Your Email Address" class="block w-full rounded-md border-2 border-gray-400 px-3.5 py-2 text-gray-900">
+                          </div>
+                      </div>
+                      <div class="sm:col-span-2">
+                          <label for="subject" class="uppercase block text-base font-bold text-black text-gray-900">Subject</label>
+                          <div class="mt-2.5">
+                              <input formControlName="subject" type="subject" id="subject" placeholder="Message subject" class="block w-full rounded-md border-2 border-gray-400 px-3.5 py-2 text-gray-900">
                           </div>
                       </div>
                       <div class="sm:col-span-2">

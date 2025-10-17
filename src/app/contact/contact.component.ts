@@ -23,6 +23,7 @@ export class ContactComponent {
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
+      subject: ['', Validators.required],
       message: ['', Validators.required],
     });
   }
@@ -35,11 +36,12 @@ export class ContactComponent {
         firstName: formValues.firstName,
         lastName: formValues.lastName,
         email: formValues.email,
+        subject: formValues.subject,
         message: formValues.message,
       };
   
       emailjs
-        .send('service_ruzfx6e', 'template_88pcpza', templateParams, 'iUkxMqLpyfruyY-cZ')
+        .send('service_a83uugh', 'template_xxon0gj', templateParams, 'HYtbzAir7gKEW_hkq')
         .then(
           () => alert('Your message has been sent successfully!'),
           (error) => {
