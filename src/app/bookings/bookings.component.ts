@@ -26,7 +26,6 @@ export class BookingsComponent  {
       bookingDate: ['', Validators.required],
       bookingTime: ['', Validators.required],
       photoType: ['', Validators.required],
-      message: ['', Validators.required],
     });
   }
 
@@ -44,7 +43,7 @@ export class BookingsComponent  {
       };
 
       emailjs
-        .send('service_ruzfx6e', 'template_88pcpza', templateParams, 'iUkxMqLpyfruyY-cZ')
+        .send('service_a83uugh', 'template_9srcqjv', templateParams, 'HYtbzAir7gKEW_hkq')
         .then(
           () => alert('Your booking has been sent successfully!'),
           (error) => {
