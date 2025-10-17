@@ -17,6 +17,8 @@ import { PertuniaBirthdayComponent } from '../pertunia-birthday/pertunia-birthda
 import { TaiBirthdayComponent } from '../tai-birthday/tai-birthday.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+import { BookingsComponent } from '../bookings/bookings.component';
+import { GradComponent } from '../grad/grad.component';
 
 @NgModule({
   imports: [
@@ -29,19 +31,21 @@ import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
           { path: 'picture', component: PictureDisplayComponent },
           { path: 'contact', component: ContactComponent },
           { path: 'pricing', component: PricingComponent }, 
+          { path: 'bookings', component: BookingsComponent },
           { path: 'ratladi', component: RatladiWeddingComponent},
           { path: 'tai', component: TaiBirthdayComponent },
           { path: 'omo', component: OmoBirthdayComponent },
           { path: 'khanya', component: KhanyaMdComponent },
           { path: 'pertunia', component: PertuniaBirthdayComponent },
+          { path: 'grad', component: GradComponent}
     ]),
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule
   ],
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [		
+      AppComponent,
+   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

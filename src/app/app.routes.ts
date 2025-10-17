@@ -11,6 +11,8 @@ import { TaiBirthdayComponent } from './tai-birthday/tai-birthday.component';
 import { OmoBirthdayComponent } from './omo-birthday/omo-birthday.component';
 import { KhanyaMdComponent } from './khanya-md/khanya-md.component';
 import { PertuniaBirthdayComponent } from './pertunia-birthday/pertunia-birthday.component';
+import { BookingsComponent } from './bookings/bookings.component';
+import { GradComponent } from './grad/grad.component';
 
 export const routes: Routes = [
     { path: '', component: HomepageComponent },
@@ -25,4 +27,6 @@ export const routes: Routes = [
     { path: 'omo', component: OmoBirthdayComponent },
     { path: 'khanya', component: KhanyaMdComponent },
     { path: 'pertunia', component: PertuniaBirthdayComponent },
+    { path: 'bookings', component: BookingsComponent },
+    { path: 'grad', component: GradComponent }, 
 ];
