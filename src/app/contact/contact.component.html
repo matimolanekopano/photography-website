@@ -1,53 +1,62 @@
 <div class="flex flex-wrap">
   <!-- Writing Section: 60% -->
   <div class="w-full sm:w-7/12">
-      <div class="container mx-auto h-full sm:p-5">
-          <div class="bg-white px-6 py-12 lg:px-8">
-              <div class="mx-auto max-w-xl flex flex-col items-center justify-center text-center">
-                <div class="text-center">
-                    <h1 class="font-imperialScript text-[60px] lg:text-[80px] mr-1">get in touch</h1>
-                </div>
-              </div>
-              <form class="mx-auto mt-5 max-w-xl sm:mt-20" (ngSubmit)="onSubmit()" [formGroup]="contactForm">
-                  <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                      <div>
-                          <label for="first-name" class="uppercase block text-base font-bold text-black text-pink-00">First name</label>
-                          <div class="mt-2.5">
-                              <input formControlName="firstName" type="text" id="first-name" placeholder="Your First Name" class="block w-full rounded-md border-2 border-gray-400 px-3.5 py-2 text-gray-900">
-                          </div>
-                      </div>
-                      <div>
-                          <label for="last-name" class="uppercase block text-base font-bold text-black text-gray-900">Last name</label>
-                          <div class="mt-2.5">
-                              <input formControlName="lastName" type="text" id="last-name" placeholder="Your Last Name" class="block w-full rounded-md border-2 border-gray-400 px-3.5 py-2 text-gray-900">
-                          </div>
-                      </div>
-                      <div class="sm:col-span-2">
-                          <label for="email" class="uppercase block text-base font-bold text-black text-gray-900">Email</label>
-                          <div class="mt-2.5">
-                              <input formControlName="email" type="email" id="email" placeholder="Your Email Address" class="block w-full rounded-md border-2 border-gray-400 px-3.5 py-2 text-gray-900">
-                          </div>
-                      </div>
-                      <div class="sm:col-span-2">
-                          <label for="subject" class="uppercase block text-base font-bold text-black text-gray-900">Subject</label>
-                          <div class="mt-2.5">
-                              <input formControlName="subject" type="subject" id="subject" placeholder="Message subject" class="block w-full rounded-md border-2 border-gray-400 px-3.5 py-2 text-gray-900">
-                          </div>
-                      </div>
-                      <div class="sm:col-span-2">
-                          <label for="message" class="uppercase block text-base font-bold text-black text-gray-900">Message</label>
-                          <div class="mt-2.5">
-                              <textarea formControlName="message" id="message" rows="4" placeholder="What would you like to know?" class="block w-full rounded-md border-2 border-gray-400 px-3.5 py-2 text-gray-900"></textarea>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="mt-1">
-                      <button type="submit" class="bg-black text-white hover:bg-white hover:text-black hover:border-2 hover:border-black py-2 px-8 rounded-full lg:text-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg mt-8">Submit</button>
-                  </div>
-              </form>
+    <div class="container mx-auto h-full sm:p-4">
+      <div class="bg-white px-4 py-8 lg:px-6">
+        <div class="mx-auto max-w-md flex flex-col items-center justify-center text-center">
+          <div class="text-center">
+            <h1 class="font-imperialScript text-[20px] lg:text-[40px] mr-1">get in touch</h1>
           </div>
+        </div>
+        <form class="mx-auto mt-4 max-w-md sm:mt-10" (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+          <div class="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2 text-sm">
+            <div>
+              <label for="first-name" class="uppercase block font-semibold text-gray-800 text-xs">First name</label>
+              <div class="mt-1.5">
+                <input formControlName="firstName" type="text" id="first-name" placeholder="Your First Name"
+                  class="block w-full rounded-md border border-gray-300 px-2.5 py-1.5 text-sm text-gray-900">
+              </div>
+            </div>
+            <div>
+              <label for="last-name" class="uppercase block font-semibold text-gray-800 text-xs">Last name</label>
+              <div class="mt-1.5">
+                <input formControlName="lastName" type="text" id="last-name" placeholder="Your Last Name"
+                  class="block w-full rounded-md border border-gray-300 px-2.5 py-1.5 text-sm text-gray-900">
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="email" class="uppercase block font-semibold text-gray-800 text-xs">Email</label>
+              <div class="mt-1.5">
+                <input formControlName="email" type="email" id="email" placeholder="Your Email Address"
+                  class="block w-full rounded-md border border-gray-300 px-2.5 py-1.5 text-sm text-gray-900">
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="subject" class="uppercase block font-semibold text-gray-800 text-xs">Subject</label>
+              <div class="mt-1.5">
+                <input formControlName="subject" type="text" id="subject" placeholder="Message subject"
+                  class="block w-full rounded-md border border-gray-300 px-2.5 py-1.5 text-sm text-gray-900">
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="uppercase block font-semibold text-gray-800 text-xs">Message</label>
+              <div class="mt-1.5">
+                <textarea formControlName="message" id="message" rows="3" placeholder="What would you like to know?"
+                  class="block w-full rounded-md border border-gray-300 px-2.5 py-1.5 text-sm text-gray-900"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <button type="submit"
+              class="bg-black text-white hover:bg-white hover:text-black hover:border hover:border-black py-1.5 px-5 rounded-full text-sm transition duration-300 ease-in-out transform hover:scale-105 hover:shadow">
+              Submit
+            </button>
+          </div>
+        </form>
       </div>
+    </div>
   </div>
+
   <!-- Image Section: 40% -->
   <img src="assets/booking.JPG" alt="Homepage" class="w-full sm:w-5/12 h-48 object-cover sm:h-screen">
 </div>
